@@ -2,14 +2,13 @@
 # from email import message
 # from urllib import request
 # from django.forms import PasswordInput
-# from django.http import HttpResponse
+from django.http import HttpResponse
 # from django.shortcuts import redirect, render
 # from .models import Client, Menu, Order, counter
 # from django.contrib.auth import authenticate, login
 # from django.contrib.auth.models import User
 # from django.contrib import messages
 # from django.contrib.auth.backends import BaseBackend
-
 
 # # Create your views here.
 
@@ -91,3 +90,7 @@
 
 # def clienthome(request):
 #     pass
+
+def helo(request):
+    return HttpResponse("helo")
+    
